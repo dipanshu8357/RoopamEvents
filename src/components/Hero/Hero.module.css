@@ -1,0 +1,238 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0a0f0d 0%, #1a2420 100%);
+  padding-top: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(244, 196, 48, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.heroText {
+  animation: fadeInLeft 1s ease;
+}
+
+.experience {
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  font-size: 5rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.portfolio {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  font-weight: 800;
+  margin-bottom: 2rem;
+  font-style: italic;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.heroStats {
+  display: flex;
+  gap: 3rem;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  border-top: 2px solid rgba(244, 196, 48, 0.3);
+  border-bottom: 2px solid rgba(244, 196, 48, 0.3);
+}
+
+.stat {
+  text-align: left;
+}
+
+.stat h3 {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+}
+
+.stat p {
+  color: var(--gray);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  color: var(--white);
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 500px;
+}
+
+.heroImage {
+  animation: fadeInRight 1s ease;
+  position: relative;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 600px;
+  background: 
+    linear-gradient(45deg, rgba(244, 196, 48, 0.1) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(244, 196, 48, 0.1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(244, 196, 48, 0.1) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(244, 196, 48, 0.1) 75%),
+    linear-gradient(135deg, rgba(10, 15, 13, 0.9) 0%, rgba(26, 36, 32, 0.8) 100%);
+  background-size: 40px 40px, 40px 40px, 40px 40px, 40px 40px, 100% 100%;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px, 0 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 3px dashed var(--accent-color);
+  position: relative;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.imagePlaceholder::before {
+  content: '📸';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.imagePlaceholder p {
+  position: relative;
+  z-index: 1;
+  background: rgba(10, 15, 13, 0.8);
+  padding: 1rem 2rem;
+  border: 2px solid var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 968px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+
+  .portfolio {
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .heroStats {
+    gap: 2rem;
+  }
+
+  .stat h3 {
+    font-size: 2.5rem;
+  }
+
+  .imagePlaceholder {
+    height: 400px;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .portfolio {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  .heroStats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .imagePlaceholder {
+    height: 350px;
+  }
+}
