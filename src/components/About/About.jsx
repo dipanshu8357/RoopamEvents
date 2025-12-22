@@ -15,7 +15,8 @@ const About = () => {
                className={styles.heroImg}></img>
           </div>
         </div>
-        <div className={styles.aboutContent}>
+        {/* <div></div> */}
+          <div className={styles.aboutContent}>
           <h2 className={styles.sectionTitle}>About Me</h2>
           <div className={styles.titleUnderline}></div>
           <p className={styles.aboutText}>
