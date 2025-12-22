@@ -7,6 +7,9 @@
   position: relative;
   overflow: hidden;
 }
+ .heroImg{
+    max-width: 113%;
+  }
 
 .hero::before {
   content: '';
@@ -211,6 +214,9 @@
   .tagline {
     font-size: 1.1rem;
   }
+   .heroImg{
+    max-width: 113%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -234,5 +240,8 @@
 
   .imagePlaceholder {
     height: 350px;
+  }
+  .heroImg{
+    max-width: 123%;
   }
 }

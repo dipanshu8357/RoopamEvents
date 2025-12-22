@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Contact.module.css'
+import { FaInstagram } from "react-icons/fa";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -47,29 +49,48 @@ const Contact = () => {
               <span className={styles.icon}>📞</span>
               <div>
                 <h4>Contact</h4>
-                <p>+1 (555) 123-4567</p>
+                <p>
+                   <a
+                    href="tel:+918103700107"
+                    className={styles.callLink}
+                  ></a>
+                  +91 8103700107</p>
               </div>
             </div>
             <div className={styles.infoItem}>
               <span className={styles.icon}>✉️</span>
               <div>
                 <h4>Email</h4>
-                <p>events@decorator.com</p>
+                <p>kashishkanojia2@gmail.com</p>
               </div>
             </div>
             <div className={styles.infoItem}>
-              <span className={styles.icon}>�</span>
+              {/* <span className={styles.icon}>�</span> */}
+              <span className={styles.icon}>
+                <FaInstagram />
+              </span>
               <div>
                 <h4>Social</h4>
-                <p>@eventdecorator</p>
+                <p><a
+                href="https://www.instagram.com/_roopam_events"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialLink}
+              >
+                @_roopam_events
+              </a></p>
               </div>
             </div>
           </div>
 
           <div className={styles.contactImage}>
-            <div className={styles.imagePlaceholder}>
-              <p>Contact Image: Decoration sample or portrait (Recommended: 600x500px)</p>
-            </div>
+            
+              {/* <p>Contact Image: Decoration sample or portrait (Recommended: 600x500px)</p> */}
+              <img
+                 src="./public\images\05_k.jpg"
+                 alt="Decoration setup"
+                 className={styles.heroImg}></img>
+            {/* </div> */}
           </div>
         </div>
       </div>

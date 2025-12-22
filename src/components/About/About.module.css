@@ -2,6 +2,9 @@
   background-color: var(--secondary-color);
   padding: 100px 20px;
 }
+.heroImg{
+  max-width: 113%;
+}
 
 .aboutContainer {
   display: grid;
@@ -159,6 +162,10 @@
   .sectionTitle {
     font-size: 2.5rem;
   }
+  .heroImg{
+  max-width: 113%;
+}
+
 }
 
 @media (max-width: 480px) {
@@ -173,4 +180,8 @@
   .approach h3 {
     font-size: 1.5rem;
   }
+  .heroImg{
+  max-width: 123%;
+  }
+
 }

@@ -39,12 +39,20 @@ const Footer = () => {
             <h4>Follow Us</h4>
             <div className={styles.socialLinks}>
               <span className={styles.socialIcon} title="Instagram">📷</span>
-              <span className={styles.socialIcon} title="Facebook">📘</span>
+              {/* <span className={styles.socialIcon} title="Facebook">📘</span>
               <span className={styles.socialIcon} title="Pinterest">📌</span>
-              <span className={styles.socialIcon} title="Twitter">🐦</span>
+              <span className={styles.socialIcon} title="Twitter">🐦</span> */}
             </div>
             <p style={{ fontSize: '0.9rem', marginTop: '1rem', opacity: 0.8 }}>
-              Add your social media links here
+              {/* Add your social media links here */}
+              <p><a
+              href="https://www.instagram.com/_roopam_events"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              >
+              @_roopam_events
+              </a></p>
             </p>
           </div>
         </div>

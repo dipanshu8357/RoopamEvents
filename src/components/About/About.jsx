@@ -7,28 +7,35 @@ const About = () => {
       <div className={styles.aboutContainer}>
         <div className={styles.aboutImage}>
           <div className={styles.imagePlaceholder}>
-            <p>About Image: Your professional photo or workspace (Recommended: 600x600px)</p>
+            {/* <p>About Image: Your professional photo or workspace (Recommended: 600x600px)</p> */}
+
+              <img
+               src="./public\images\03_k.jpg"
+               alt="Decoration setup"
+               className={styles.heroImg}></img>
           </div>
         </div>
         <div className={styles.aboutContent}>
           <h2 className={styles.sectionTitle}>About Me</h2>
           <div className={styles.titleUnderline}></div>
           <p className={styles.aboutText}>
-            Hi! I'm a passionate event decorator with a keen eye for detail and a love for creating unforgettable experiences. 
-            With over 5 years of experience in the event decoration industry, I specialize in transforming ordinary spaces 
-            into extraordinary celebrations.
+           Roopam Events is a professional event management company founded by Kashish and Yuvraj Kanojia,
+            a brother-and-sister duo driven by creativity and passion. 
+           Since 2020, we have been crafting elegant weddings, celebrations, and events with personalized concepts,
+            quality décor, and seamless execution.
+
           </p>
           <p className={styles.aboutText}>
-            My approach goes beyond just placing decorations. I believe in understanding your vision, your story, and your 
-            dreams to create a unique ambiance that reflects your personality and makes your event truly special.
+            At Roopam Events, we don’t just manage events — we create moments that last a lifetime.
           </p>
           
           <div className={styles.approach}>
             <h3>My Approach</h3>
             <p>
-              Every event is unique, and I focus on creating personalized designs that capture the essence of your celebration. 
-              From intimate gatherings to grand celebrations, I bring creativity, professionalism, and attention to detail to 
-              every project. My goal is to exceed your expectations and create magical moments that you'll cherish forever.
+             At Roopam Events, we believe every celebration deserves a personal touch.
+              We plan, design, and execute events with creativity, precision, and care.
+              From concept to completion, we focus on seamless coordination and elegant details.
+              Creating unforgettable moments that last a lifetime.
             </p>
           </div>
 

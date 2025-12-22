@@ -5,6 +5,28 @@
   position: relative;
   overflow: hidden;
 }
+.icon {
+  font-size: 22px;
+  color: #E1306C; /* Instagram pink */
+}
+
+.socialLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.socialLink:hover {
+  text-decoration: underline;
+}
+.callLink {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.callLink:hover {
+  text-decoration: underline;
+}
 
 .contact::before {
   content: '';
