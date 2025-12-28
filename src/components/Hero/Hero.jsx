@@ -27,7 +27,7 @@ const Hero = () => {
           <div className={styles.imagePlaceholder}>
             {/* <p>Hero Image: Replace with your best decoration photo (Recommended: 800x600px)</p> */}
              <img
-               src="./public\images\07_k.jpg"
+               src="/RoopamEvents/images/07_k.jpg"
               alt="Decoration setup"
               className={styles.heroImg}></img>
           </div>

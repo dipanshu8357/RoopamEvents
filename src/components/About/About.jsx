@@ -10,7 +10,7 @@ const About = () => {
             {/* <p>About Image: Your professional photo or workspace (Recommended: 600x600px)</p> */}
 
               <img
-               src="./public\images\03_k.jpg"
+               src="/RoopamEvents/images/03_k.jpg"
                alt="Decoration setup"
                className={styles.heroImg}></img>
           </div>
